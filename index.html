@@ -56,7 +56,72 @@
         display: block;
       }
     }
+     
+    .client-collection img {
+      width: 100px;
+      margin: auto 10px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+
+    .slider {
+      height: 200px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: auto;
+    }
+
+    .slider::before,
+    .slider::after {
+      content: "";
+      height: 200px;
+      position: absolute;
+      width: 200px;
+      z-index: 2;
+    }
+
+    .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .slider::before {
+      left: 0;
+      top: 0;
+    }
+
+    .slider .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+
+    .slider .slide {
+      height: 200px;
+      width: 350px;
+      margin-right: 120px;
+    }
+
+    .mobile-client {
+      display: none;
+    }
+
+    .mobile-client img {
+      width: 130px;
+      margin: auto 40px;
+    }
   </style>
+ 
 </head>
 
 <body>
@@ -263,79 +328,15 @@
     </p>
   </div>
 
-  <style>
-    .client-collection img {
-      width: 100px;
-      margin: auto 10px;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(calc(-250px * 7));
-      }
-    }
-
-    .slider {
-      height: 200px;
-      margin: auto;
-      overflow: hidden;
-      position: relative;
-      width: auto;
-    }
-
-    .slider::before,
-    .slider::after {
-      content: "";
-      height: 200px;
-      position: absolute;
-      width: 200px;
-      z-index: 2;
-    }
-
-    .slider::after {
-      right: 0;
-      top: 0;
-      transform: rotateZ(180deg);
-    }
-
-    .slider::before {
-      left: 0;
-      top: 0;
-    }
-
-    .slider .slide-track {
-      animation: scroll 40s linear infinite;
-      display: flex;
-      width: calc(250px * 14);
-    }
-
-    .slider .slide {
-      height: 200px;
-      width: 350px;
-      margin-right: 120px;
-    }
-
-    .mobile-client {
-      display: none;
-    }
-
-    .mobile-client img {
-      width: 130px;
-      margin: auto 40px;
-    }
-  </style>
-
-  <div class=" d-flex flex-wrap mobile-client justify-content-center">
-    <img src="./img/client-bocsch.webp" />
-    <img src="./img/client-isro.webp" />
-    <img src="./img/client-midhani.webp" />
-    <img src="./img/client-usha.webp" />
-    <img src="./img/client-tatamotor.webp" />
-    <img src="./img/client-usmanabad.webp" />
+  <div class="mobile-client">
+    <div class=" d-flex flex-wrap  justify-content-center">
+      <img src="./img/client-bocsch.webp" />
+      <img src="./img/client-isro.webp" />
+      <img src="./img/client-midhani.webp" />
+      <img src="./img/client-usha.webp" />
+      <img src="./img/client-tatamotor.webp" />
+      <img src="./img/client-usmanabad.webp" />
+    </div>
   </div>
 
 
@@ -343,58 +344,62 @@
   <div class="slider client-collection">
     <div class="slide-track">
       <div class="slide">
-        <img style="    margin: 20px 10px;" src="./img/client-bocsch.webp" alt="" />
+        <img  src="./img/client-bocsch.webp" style="margin: 60px 0px;" alt="" />
       </div>
       <div class="slide">
-        <img src="./img/client-isro.webp" alt="" />
+        <img src="./img/client-isro.webp" style="margin: 25px 0;" alt="" />
       </div>
       <div class="slide">
-        <img style="margin: 50px 10px;" src="./img/client-midhani.webp" alt="" />
+        <img src="./img/client-midhani.webp" style="margin: 45px 0;" alt="" />
       </div>
       <div class="slide">
-        <img style="    margin: 25px 10px;" src="./img/client-usha.webp" alt="" />
+        <img src="./img/client-usha.webp" style="margin: 60px 0px;" alt="" />
       </div>
       <div class="slide">
-        <img style="    margin: 20px 10px;" src="./img/client-tatamotor.webp" alt="" />
+        <img  src="./img/client-tatamotor.webp" style="margin: 40px 0;" alt="" />
       </div>
       <div class="slide">
-        <img style="    margin: 50px 10px;" src="./img/client-usmanabad.webp" alt="" />
+        <img src="./img/client-usmanabad.webp" alt="" />
       </div>
-      <img style="    margin: 20px 10px;" src="./img/client-bocsch.webp" alt="" />
+
+      <div class="slide">
+        <img  src="./img/client-bocsch.webp" style="margin: 60px 0px;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-isro.webp" style="margin: 25px 0;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-midhani.webp" style="margin: 45px 0;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-usha.webp" style="margin: 60px 0px;" alt="" />
+      </div>
+      <div class="slide">
+        <img  src="./img/client-tatamotor.webp" style="margin: 40px 0;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-usmanabad.webp" alt="" />
+      </div>
+
+      <div class="slide">
+        <img  src="./img/client-bocsch.webp" style="margin: 60px 0px;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-isro.webp" style="margin: 25px 0;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-midhani.webp" style="margin: 45px 0;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-usha.webp" style="margin: 60px 0px;" alt="" />
+      </div>
+      <div class="slide">
+        <img  src="./img/client-tatamotor.webp" style="margin: 40px 0;" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./img/client-usmanabad.webp" alt="" />
+      </div>
     </div>
-    <div class="slide">
-      <img src="./img/client-isro.webp" alt="" />
-    </div>
-    <div class="slide">
-      <img style="margin: 50px 10px;" src="./img/client-midhani.webp" alt="" />
-    </div>
-    <div class="slide">
-      <img style="    margin: 25px 10px;" src="./img/client-usha.webp" alt="" />
-    </div>
-    <div class="slide">
-      <img style="    margin: 20px 10px;" src="./img/client-tatamotor.webp" alt="" />
-    </div>
-    <div class="slide">
-      <img style="    margin: 50px 10px;" src="./img/client-usmanabad.webp" alt="" />
-    </div>
-    <img style="    margin: 20px 10px;" src="./img/client-bocsch.webp" alt="" />
-  </div>
-  <div class="slide">
-    <img src="./img/client-isro.webp" alt="" />
-  </div>
-  <div class="slide">
-    <img style="margin: 50px 10px;" src="./img/client-midhani.webp" alt="" />
-  </div>
-  <div class="slide">
-    <img style="    margin: 25px 10px;" src="./img/client-usha.webp" alt="" />
-  </div>
-  <div class="slide">
-    <img style="    margin: 20px 10px;" src="./img/client-tatamotor.webp" alt="" />
-  </div>
-  <div class="slide">
-    <img style="    margin: 50px 10px;" src="./img/client-usmanabad.webp" alt="" />
-  </div>
-  </div>
   </div>
 
   <!-- client scrooler -->
