@@ -602,18 +602,19 @@ h6,
     left: -300px; */
 
 @media screen and (max-width: 777px) {
-    .container-fluid.page-header .container {
+    .container-fluid.page-header .container, .carousel-control-prev, .carousel-control-next {
         display: none;
     }
-
+    .container-fluid.p-0.wow{margin-top: 70px;}
     .page-header {
         text-align: center;
         padding: 7rem 0 0rem 0;
     }
-
+    .client-collection {display: none;}
+    .mobile-client {display: block;}
     .page-header img {
-        width: 50%;
-        margin: 0;
+        width: 50% !important;
+        margin: 0 !important;
         float: none;
     }
 }
