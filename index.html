@@ -36,14 +36,18 @@
     .relion-mini-device-logo {
       display: none;
     }
+
     @media screen and (max-width: 777px) {
       .container-fluid.page-header .container {
         display: none;
-      } .img-fluid {
-    max-width: 100%;
-    height: auto !important;
-    width: 540px !important;
-}
+      }
+
+      .img-fluid {
+        max-width: 100%;
+        height: auto !important;
+        width: 540px !important;
+      }
+
       .carousel-inner img.w-100 {
         display: none;
       }
@@ -51,7 +55,7 @@
       .relion-mini-device-logo {
         display: block;
       }
-    }  
+    }
   </style>
 </head>
 
@@ -73,10 +77,10 @@
           pm</small>
       </div>
       <div class="col-lg-6 px-5 text-end">
-          <small><a href="mailto:info@agtrelion.com" class="text-dark"><i
-                      class="fa fa-envelope text-primary me-2"></i>info@agtrelion.com</a></small>
-          <small class="ms-4"><a href="tel:+912243536500" class="text-dark"><i
-                      class="fa fa-phone-alt text-primary me-2"></i>+91 2243536500</a></small>
+        <small><a href="mailto:info@agtrelion.com" class="text-dark"><i
+              class="fa fa-envelope text-primary me-2"></i>info@agtrelion.com</a></small>
+        <small class="ms-4"><a href="tel:+912243536500" class="text-dark"><i
+              class="fa fa-phone-alt text-primary me-2"></i>+91 2243536500</a></small>
       </div>
     </div>
 
@@ -110,7 +114,7 @@
           </div>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        
+
       </div>
     </nav>
   </div>
@@ -153,8 +157,9 @@
                   <h1 class="display-1 mb-4 animated slideInDown">
                     Unlock The Potential Of Your ITAM
                   </h1>
-                  <button class="btn btn-primary py-3 px-5 animated slideInDown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Become a partner</button>
-                  
+                  <button class="btn btn-primary py-3 px-5 animated slideInDown" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Become a partner</button>
+
                 </div>
               </div>
             </div>
@@ -171,7 +176,7 @@
       </button>
     </div>
   </div>
- 
+
   <!-- Carousel End -->
   <div class="text-center mb-5 relion-mini-device-logo">
     <img class="w-25" src="./img/relion-log.png" />
@@ -181,7 +186,7 @@
     <div class="container">
       <div class="row g-4 align-items-end mb-4">
         <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp text-center" data-wow-delay="0.1s">
-          <img class="img-fluid rounded"  src="img/about-advance.jpg" />
+          <img class="img-fluid rounded" src="img/about-advance.jpg" />
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
@@ -263,25 +268,27 @@
       width: 100px;
       margin: auto 10px;
     }
-       @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
 
-        100% {
-          transform: translateX(calc(-250px * 7));
-        }
-      } 
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
 
-    .slider { 
+      100% {
+        transform: translateX(calc(-250px * 7));
+      }
+    }
+
+    .slider {
       height: 200px;
       margin: auto;
       overflow: hidden;
-      position: relative; 
+      position: relative;
       width: auto;
-    } 
+    }
+
     .slider::before,
-    .slider::after { 
+    .slider::after {
       content: "";
       height: 200px;
       position: absolute;
@@ -308,10 +315,18 @@
 
     .slider .slide {
       height: 200px;
-      width: 350px;margin-right:120px ;
+      width: 350px;
+      margin-right: 120px;
     }
-    .mobile-client{display: none;}
-    .mobile-client img{width: 130px; margin: auto 40px; }
+
+    .mobile-client {
+      display: none;
+    }
+
+    .mobile-client img {
+      width: 130px;
+      margin: auto 40px;
+    }
   </style>
 
   <div class=" d-flex flex-wrap mobile-client justify-content-center">
@@ -328,80 +343,60 @@
   <div class="slider client-collection">
     <div class="slide-track">
       <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/194-1948403_isro-logo-hd-png-download-removebg-preview.webp" alt="" />
+        <img style="    margin: 20px 10px;" src="./img/client-bocsch.webp" alt="" />
       </div>
       <div class="slide">
-        <img src="https://agtrelion.com/wp-content/uploads/2023/09/zyro-image.webp" alt="" />
+        <img src="./img/client-isro.webp" alt="" />
       </div>
       <div class="slide">
-        <img style="margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Usha-Logo-PNG-HD@zeevector.webp" alt="" />
+        <img style="margin: 50px 10px;" src="./img/client-midhani.webp" alt="" />
       </div>
       <div class="slide">
-        <img style="    margin: 25px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Mishra_Dhatu_Nigam.svg.webp" alt="" />
+        <img style="    margin: 25px 10px;" src="./img/client-usha.webp" alt="" />
       </div>
       <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/infographics0-e1695729742861.webp" alt="" />
+        <img style="    margin: 20px 10px;" src="./img/client-tatamotor.webp" alt="" />
       </div>
       <div class="slide">
-        <img style="    margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Bosch_logo.webp" alt="" />
-      </div>  
-      <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/194-1948403_isro-logo-hd-png-download-removebg-preview.webp" alt="" />
+        <img style="    margin: 50px 10px;" src="./img/client-usmanabad.webp" alt="" />
       </div>
-      <div class="slide">
-        <img src="https://agtrelion.com/wp-content/uploads/2023/09/zyro-image.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Usha-Logo-PNG-HD@zeevector.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 25px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Mishra_Dhatu_Nigam.svg.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/infographics0-e1695729742861.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Bosch_logo.webp" alt="" />
-      </div>  
-      <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/194-1948403_isro-logo-hd-png-download-removebg-preview.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img src="https://agtrelion.com/wp-content/uploads/2023/09/zyro-image.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Usha-Logo-PNG-HD@zeevector.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 25px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Mishra_Dhatu_Nigam.svg.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/infographics0-e1695729742861.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Bosch_logo.webp" alt="" />
-      </div>  
-      <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/194-1948403_isro-logo-hd-png-download-removebg-preview.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img src="https://agtrelion.com/wp-content/uploads/2023/09/zyro-image.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Usha-Logo-PNG-HD@zeevector.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 25px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Mishra_Dhatu_Nigam.svg.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 20px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/infographics0-e1695729742861.webp" alt="" />
-      </div>
-      <div class="slide">
-        <img style="    margin: 50px 10px;" src="https://agtrelion.com/wp-content/uploads/2023/09/Bosch_logo.webp" alt="" />
-      </div>   
+      <img style="    margin: 20px 10px;" src="./img/client-bocsch.webp" alt="" />
     </div>
+    <div class="slide">
+      <img src="./img/client-isro.webp" alt="" />
+    </div>
+    <div class="slide">
+      <img style="margin: 50px 10px;" src="./img/client-midhani.webp" alt="" />
+    </div>
+    <div class="slide">
+      <img style="    margin: 25px 10px;" src="./img/client-usha.webp" alt="" />
+    </div>
+    <div class="slide">
+      <img style="    margin: 20px 10px;" src="./img/client-tatamotor.webp" alt="" />
+    </div>
+    <div class="slide">
+      <img style="    margin: 50px 10px;" src="./img/client-usmanabad.webp" alt="" />
+    </div>
+    <img style="    margin: 20px 10px;" src="./img/client-bocsch.webp" alt="" />
   </div>
- 
+  <div class="slide">
+    <img src="./img/client-isro.webp" alt="" />
+  </div>
+  <div class="slide">
+    <img style="margin: 50px 10px;" src="./img/client-midhani.webp" alt="" />
+  </div>
+  <div class="slide">
+    <img style="    margin: 25px 10px;" src="./img/client-usha.webp" alt="" />
+  </div>
+  <div class="slide">
+    <img style="    margin: 20px 10px;" src="./img/client-tatamotor.webp" alt="" />
+  </div>
+  <div class="slide">
+    <img style="    margin: 50px 10px;" src="./img/client-usmanabad.webp" alt="" />
+  </div>
+  </div>
+  </div>
+
   <!-- client scrooler -->
   <!-- Facts Start -->
   <div class="container-fluid facts my-5 py-">
@@ -459,101 +454,104 @@
             comprehensive approach ensures that assets are utilized
             effectively throughout their lifespan.
           </p>
-          <!-- redirect to about page  feture section --> 
+          <!-- redirect to about page  feture section -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Become a partner
           </button>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Become A Partner</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form class="p-2">  
-          <div class="">
-            <h5>Contact Details</h5>
-            <div class="row mx-">
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Business Name* :</label>
-                <input class="form-control" type="text" placeholder="Enter Business Name" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Address :</label>
-                <input class="form-control" type="text" placeholder="Enter Address" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Country* :</label>
-                <input class="form-control" type="text" placeholder="Enter Country" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>City :</label>
-                <input class="form-control" type="text" placeholder="Enter City" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>State / Province :</label>
-                <input class="form-control" type="text" placeholder="Enter State / Province" />
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Become A Partner</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="p-2">
+                    <div class="">
+                      <h5>Contact Details</h5>
+                      <div class="row mx-">
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Business Name* :</label>
+                          <input class="form-control" type="text" placeholder="Enter Business Name" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Address :</label>
+                          <input class="form-control" type="text" placeholder="Enter Address" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Country* :</label>
+                          <input class="form-control" type="text" placeholder="Enter Country" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>City :</label>
+                          <input class="form-control" type="text" placeholder="Enter City" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>State / Province :</label>
+                          <input class="form-control" type="text" placeholder="Enter State / Province" />
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="">
+                      <h5>Contact Person</h5>
+                      <div class="row mx-">
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Person Name* :</label>
+                          <input class="form-control" type="text" placeholder="Enter Your Name" required />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Person Email* :</label>
+                          <input class="form-control" type="email" placeholder="Enter Your Email" required />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Mbile Number* :</label>
+                          <input class="form-control" type="number" placeholder="Enter Mobile Number" required />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Website URL* :</label>
+                          <input class="form-control" type="text" placeholder="Enter Website URL" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Fax :</label>
+                          <input class="form-control" type="text" placeholder="Enter Fax" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Office Count :</label>
+                          <input class="form-control" type="text" placeholder="How many sales office do you have?" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Employee Count :</label>
+                          <input class="form-control" type="text" placeholder="How many employees do you have?" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>Company Founded Date :</label>
+                          <input class="form-control" type="date"
+                            placeholder="In which year was the company founded?" />
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                          <label>partners :</label>
+                          <input class="form-control" type="text"
+                            placeholder="Who are the vendors you have partnership with?" />
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 my-2">
+                          <label>Comment :</label>
+                          <textarea class="form-control" type="text" placeholder="Your Comment..."></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer ">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-primary mx-auto px-4">Submit</button>
+                </div>
               </div>
             </div>
           </div>
-          <hr/>
-          <div class="">
-            <h5>Contact Person</h5>
-            <div class="row mx-">
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Person Name* :</label>
-                <input class="form-control" type="text" placeholder="Enter Your Name" required/>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Person Email* :</label>
-                <input class="form-control" type="email" placeholder="Enter Your Email" required/>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Mbile Number* :</label>
-                <input class="form-control" type="number" placeholder="Enter Mobile Number" required/>
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Website URL* :</label>
-                <input class="form-control" type="text" placeholder="Enter Website URL" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Fax :</label>
-                <input class="form-control" type="text" placeholder="Enter Fax" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Office Count :</label>
-                <input class="form-control" type="text" placeholder="How many sales office do you have?" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Employee Count :</label>
-                <input class="form-control" type="text" placeholder="How many employees do you have?" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>Company Founded Date :</label>
-                <input class="form-control" type="date" placeholder="In which year was the company founded?" />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <label>partners :</label>
-                <input class="form-control" type="text" placeholder="Who are the vendors you have partnership with?" />
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 my-2">
-                <label>Comment :</label>
-                <textarea class="form-control" type="text" placeholder="Your Comment..."></textarea>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer ">
-        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-        <button type="button" class="btn btn-primary mx-auto px-4">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
 
         </div>
         <div class="col-lg-6">
@@ -648,8 +646,8 @@
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute rounded w-100 h-100" src="./img/planning1.jpg" style="object-fit: cover"
-                      alt="" />
+                    <img class="position-absolute rounded w-100 h-100" src="./img/planning1.jpg"
+                      style="object-fit: cover" alt="" />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -682,8 +680,8 @@
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute rounded w-100 h-100" src="./img/Deployment.jpg" style="object-fit: cover"
-                      alt="" />
+                    <img class="position-absolute rounded w-100 h-100" src="./img/Deployment.jpg"
+                      style="object-fit: cover" alt="" />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -726,8 +724,8 @@
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute rounded w-100 h-100" src="./img/Maintainance.jpg" style="object-fit: cover"
-                      alt="" />
+                    <img class="position-absolute rounded w-100 h-100" src="./img/Maintainance.jpg"
+                      style="object-fit: cover" alt="" />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -770,8 +768,8 @@
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute rounded w-100 h-100" src="./img/assetdisposal.jpg" style="object-fit: cover"
-                      alt="" />
+                    <img class="position-absolute rounded w-100 h-100" src="./img/assetdisposal.jpg"
+                      style="object-fit: cover" alt="" />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -948,7 +946,7 @@
           <div class="project-title">
             <h4 class="mb-0">MDM</h4>
           </div>
-        </div> 
+        </div>
         <div class="project-item pe-5 pb-5">
           <div class="project-img mb-3">
             <img class="img-fluid rounded" src="./img/7reports.PNG" alt="" />
@@ -1040,55 +1038,53 @@
   <!-- Testimonial End -->
 
   <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-      <div class="container py-5">
-          <div class="row g-5">
-              <div class="col-lg-5 col-md-6">
-                  <h4 class="text-white mb-4">Our Office</h4>
+  <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-5 col-md-6">
+          <h4 class="text-white mb-4">Our Office</h4>
 
-                  <p class="mb-2 d-flex"><i class="fa fa-map-marker-alt me-3"></i>
-                      <span> 3rd Lobby, Plot No. A, RUPA SOLITAIRE, Office Number 316, 1, MBP Rd, Sector I, Navi
-                          Mumbai, Maharashtra 400710</span>
-                  </p>
+          <p class="mb-2 d-flex"><i class="fa fa-map-marker-alt me-3"></i>
+            <span> 3rd Lobby, Plot No. A, RUPA SOLITAIRE, Office Number 316, 1, MBP Rd, Sector I, Navi
+              Mumbai, Maharashtra 400710</span>
+          </p>
 
-                  <p class="mb-2 d-flex">
-                      <i class="fa fa-phone-alt me-3"></i>
-                      <span>
-                          <a href="tel:+912243536500">+91 22-43536500</a> <br />
-                          <a href="tel:+917276226878">+91 7276226878</a>
-                      </span>
+          <p class="mb-2 d-flex">
+            <i class="fa fa-phone-alt me-3"></i>
+            <span>
+              <a href="tel:+912243536500">+91 22-43536500</a> <br />
+              <a href="tel:+917276226878">+91 7276226878</a>
+            </span>
 
-                  </p>
-                  <p class="mb-2"><i class="fa fa-envelope me-3"></i> <a
-                          href="mailto:info@agtrelion.com">info@agtrelion.com</a> </p>
-                  <div class="d-flex pt-2">
-                      <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i
-                              class="fab fa-twitter"></i></a>
-                      <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i
-                              class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i
-                              class="fab fa-youtube"></i></a>
-                      <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i
-                              class="fab fa-linkedin-in"></i></a>
-                  </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                  <h4 class="text-white mb-4">Quick Links</h4>
-                  <a class="btn btn-link" href="./about.html">About Us</a>
-                  <a class="btn btn-link" href="./contact.html">Contact Us</a>
-                  <a class="btn btn-link" href="./service.html">Our Services</a>
-                  <a class="btn btn-link" href="./index.html#request-demo-form">Request Demo</a>
-                  <a class="btn btn-link" href="./contact.html#job-apply">Career With Us</a>
-                  <a class="btn btn-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Become a partner</a>
-          
-              </div>
-              <div class="col-lg-3 col-md-6 text-center">
-                  <img src="./img/relion-crop-removebg-preview.png" class="w-75 mx-auto" />
-                  <p class="text-white text-center fs-6">Innovating next...</p>
-              </div>
+          </p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i> <a href="mailto:info@agtrelion.com">info@agtrelion.com</a>
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i class="fab fa-youtube"></i></a>
+            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""> <i
+                class="fab fa-linkedin-in"></i></a>
           </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-4">Quick Links</h4>
+          <a class="btn btn-link" href="./about.html">About Us</a>
+          <a class="btn btn-link" href="./contact.html">Contact Us</a>
+          <a class="btn btn-link" href="./service.html">Our Services</a>
+          <a class="btn btn-link" href="./index.html#request-demo-form">Request Demo</a>
+          <a class="btn btn-link" href="./contact.html#job-apply">Career With Us</a>
+          <a class="btn btn-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Become a partner</a>
+
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <img src="./img/relion-crop-removebg-preview.png" class="w-75 mx-auto" />
+          <p class="text-white text-center fs-6">Innovating next...</p>
+        </div>
       </div>
+    </div>
   </div>
   <!-- Footer End -->
   <!-- Copyright Start -->
@@ -1119,7 +1115,7 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
- 
+
 </body>
 
 </html>
