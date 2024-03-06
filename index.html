@@ -41,7 +41,7 @@
         display: none;
       } .img-fluid {
     max-width: 100%;
-    height: 540px !important;
+    height: auto !important;
     width: 540px !important;
 }
       .carousel-inner img.w-100 {
@@ -173,17 +173,17 @@
   </div>
  
   <!-- Carousel End -->
-  <div class="text-center my-3 relion-mini-device-logo">
-    <img class="w-50" src="./img/relion-log.png" />
+  <div class="text-center mb-5 relion-mini-device-logo">
+    <img class="w-25" src="./img/relion-log.png" />
   </div>
   <!-- About Start -->
   <div class="container-xxl py-3">
     <div class="container">
       <div class="row g-4 align-items-end mb-4">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp text-center" data-wow-delay="0.1s">
           <img class="img-fluid rounded"  src="img/about-advance.jpg" />
         </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             About Us
           </p>
@@ -310,7 +310,21 @@
       height: 200px;
       width: 350px;margin-right:120px ;
     }
+    .mobile-client{display: none;}
+    .mobile-client img{width: 130px; margin: auto 40px; }
   </style>
+
+  <div class=" d-flex flex-wrap mobile-client justify-content-center">
+    <img src="./img/client-bocsch.webp" />
+    <img src="./img/client-isro.webp" />
+    <img src="./img/client-midhani.webp" />
+    <img src="./img/client-usha.webp" />
+    <img src="./img/client-tatamotor.webp" />
+    <img src="./img/client-usmanabad.webp" />
+  </div>
+
+
+
   <div class="slider client-collection">
     <div class="slide-track">
       <div class="slide">
@@ -861,6 +875,7 @@
         <h1 class="display-5 mb-5">Our Products</h1>
       </div>
       <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
+        <!-- <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s"> -->
 
         <div class="project-item pe-5 pb-5">
           <div class="project-img mb-3">
