@@ -611,7 +611,7 @@ h6,
         padding: 7rem 0 0rem 0;
     }
     .client-collection {display: none;}
-    .mobile-client {display: block;}
+    .mobile-client {display: block !important;}
     .page-header img {
         width: 50% !important;
         margin: 0 !important;
