@@ -605,7 +605,7 @@ h6,
     .container-fluid.page-header .container, .carousel-control-prev, .carousel-control-next {
         display: none;
     }
-    .container-fluid.p-0.wow{margin-top: 50px;}
+    .container-fluid.p-0.wow{margin-top: 45px;}
     .page-header {
         text-align: center;
         padding: 7rem 0 0rem 0;
