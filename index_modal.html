@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style_modal.css">
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div
+        class="bg-white rounded-lg p-6 sm:w-full lg:max-w-md shadow-md w-full max-w-screen-md mx-auto"
+      >
+        <p class="underline decoration-1">
+          <a href="./index.html" class="text-sky-500">
+            <span class="material-symbols-outlined text-lg align-sub">
+              arrow_back
+            </span>
+            Back
+          </a>
+        </p>
+        <div class="bg-[#373A7B] rounded-lg p-6">
+          <img
+            src="./imgs/agt_svg.svg"
+            alt="Avinash Kumar Singh"
+            class="w-32 rounded-lg mx-auto"
+          />
+          <h2 class="text-white text-2xl font-bold text-center mt-4">
+            AVINASH KUMAR SINGH
+          </h2>
+          <p class="text-white text-lg text-center">Book a 60-min call</p>
+          <div class="flex items-center justify-center mt-4 gap-2">
+            <i class="fa-solid fa-video w-6 h-6 text-white"></i>
+            <p class="text-white text-center text-sm">
+              Web conference - The meeting link will be sent to you upon
+              confirmation
+            </p>
+          </div>
+        </div>
+        <div class="p-6">
+          <form>
+            <div class="mt-4">
+              <label for="full-name" class="text-black block mb-2">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="full-name"
+                class="bg-gray-200 rounded-md p-2 w-full required"
+                required
+              />
+            </div>
+            <div class="mt-4">
+              <label for="designation" class="text-black block mb-2">
+                Designation <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="designation"
+                class="bg-gray-200 rounded-md p-2 w-full required"
+                required
+              />
+            </div>
+            <div class="mt-4">
+              <label for="company-name" class="text-black block mb-2">
+                Company Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="company-name"
+                class="bg-gray-200 rounded-md p-2 w-full required"
+                required
+              />
+            </div>
+            <div class="mt-4">
+              <label for="business-email" class="text-black block mb-2">
+                Business email <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="business-email"
+                class="bg-gray-200 rounded-md p-2 w-full required"
+                required
+              />
+            </div>
+            <div class="mt-4">
+              <label for="mobile-number" class="text-black block mb-2">
+                Mobile Number <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="tel"
+                id="mobile-number"
+                class="bg-gray-200 rounded-md p-2 w-full required"
+                required
+              />
+            </div>
+            <div class="mt-4">
+              <label for="feature" class="text-black block mb-2">
+                Specific Feature to be demonstrated
+              </label>
+              <textarea
+                id="feature"
+                class="bg-gray-200 rounded-md p-2 w-full"
+              ></textarea>
+            </div>
+            <div class="mt-4">
+              <label for="date" class="text-black block mb-2">
+                Please select date and time
+                <span class="text-red-500">*</span>
+              </label>
+              <div class="flex gap-2">
+                <input
+                  type="date"
+                  id="datePicker" name="date"
+                  class="bg-gray-200 rounded-md p-2 w-full required"
+                  required
+                />
+                <input
+                  type="time"
+                  id="time"
+                  class="bg-gray-200 rounded-md p-2 w-full required"
+                  required
+                />
+              </div>
+            </div>
+            <div class="w-full flex justify-center mt-4">
+              <button
+                class="w-60 px-4 py-2 bg-[#6349AE] text-white rounded-full shadow-md font-medium font-serif"
+              >
+                Schedule my Event
+              </button>
+              <i
+                class="fa-solid fa-chevron-right ml-2 text-[#6349AE]"
+                style="vertical-align: middle"
+              ></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+         document.addEventListener('DOMContentLoaded', (event) => {
+            const dateInput = document.getElementById('datePicker');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        });
+    </script>
+  </body>
+</html>

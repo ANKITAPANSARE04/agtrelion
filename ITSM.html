@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>AigutechTechnologies</title>
+  <link rel="icon" href="./imgs/agt_svg.svg" type="image/gif" sizes="16x16" /> 
+
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/bootstrap.min.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/bootstrap-icons.css" />
+  <link rel="stylesheet"
+    href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/fontawesome.all.min.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/lightcase.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/nice-select.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/animate.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/normalize.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/style.css" />
+  <link rel="stylesheet" href="./iBig - Business Multipurpose Bootstrap5 Website Template_files/responsive.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/7b8cdb237a.js" cross origin="anonymous"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <link rel="stylesheet" href="./new_style.css" />
+</head>
+
+<body>  
+  <!-- top navigation start -->
+  <header class="header header-style-3">
+    <nav class="navbar navbar-expand-lg">
+      <a href=""><img  id="scroll-image" style="opacity: .9;" src="./imgs/agt_svg.svg" alt=""></a>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="/index.html#Home">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/index.html#about-us">About Us</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/index.html#service">Services</a>
+            </li> 
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/index.html#resources">Resources</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link bg-primary text-white hover:underline" href="./index_modal.html">
+                Schedule meeting
+                <small class="material-symbols-outlined my-auto mx-1 align-middle" style="font-size: 14px">
+                  arrow_forward_ios
+                </small></a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- top navigation end -->
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .hero-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+      /* background-color: #2565B1; */
+      background: url('./imgs/banner2.png') no-repeat center center/cover;
+      color: #fff !important;
+      text-align: center;
+      position: relative;
+      border-radius: 0 0 50% 50% / 0 0 100% 100%;
+      padding: 0 20px; /* Add some padding for small screens */}
+    .hero-section h3, .hero-section p{color: white !important;
+    } 
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 50% 50% / 0 0 22% 22%;
+      z-index: 1;
+    }
+    .hero-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #225996;
+      background: url('./imgs/banner2.png') no-repeat center center/cover;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  transform: scaleX(2); }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px; /* Limit content width for large screens */
+      width: 100%;
+      padding: 0 20px; /* Padding for responsive design */
+    }
+    .hero-heading {
+      /* font-family: 'Playfair Display', serif; */
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.2; /* Improve readability */
+    }
+    .hero-subheading {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-button-primary, .hero-button-secondary {
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      margin: 0.5rem; /* Space between buttons on small screens */
+    }
+  
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero-heading {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+      }
+      .hero-subheading {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+      }
+      .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-heading {
+        font-size: 1.8rem; /* Further adjust font size for very small screens */
+      }
+      .hero-subheading {
+        font-size: 1rem; /* Further adjust font size for very small screens */
+      }
+      .hero-button-primary, .hero-button-secondary {
+        padding: 0.75rem 1.5rem; /* Adjust button padding */
+      }
+    }
+  </style> 
+  <!-- hero-banner start -->
+  
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h3 class="hero-heading">Transform Your IT Operations with Innovative ITSM Solutions</h>
+      <p class="hero-subheading">Streamline processes, boost efficiency, and drive business success.</p>
+      <div class="hero-buttons">
+        <a href="./index_modal.html" class="btn btn-primary py-2 px-4">Request Demo
+          <small class="material-symbols-outlined my-auto mx-1 align-middle" style="font-size: 14px">
+            arrow_forward_ios
+          </small>
+
+        </a> 
+      </div>
+    </div>
+  </section>
+  <!-- hero-banner end -->
+
+  <!-- About us -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6 " data-aos="fade-up-right">
+          <div class="about-img text-center">
+            <img class="mx-auto" style="width: 90%" src="./imgs/about_frame.png" alt="about" />
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-left">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>About Our Company</h4>
+            <h2 class="fs-3">
+              Helping Businesses to succeed by providing innovative and
+              effective solutions.
+            </h2>
+          </div>
+          <div class="about-content-2">
+            <p>
+              AGT is an emerging company with an approach focused towards
+              innovation in the realm of software development and ESDM. Our
+              strength is providing a holistic solution to our esteemed
+              customers. <br />
+              We target emerging sectors like energy and power, manufacturing,
+              logistics and distribution, and embedded systems. Our presence
+              is also in the field of healthcare and automobile embedded
+              systems.
+            </p>
+            <ul class="list-icon">
+              <li>
+                <span class="material-symbols-outlined">
+                  developer_mode_tv
+                </span>
+                <span>Smart Code Structure </span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">
+                  design_services
+                </span>
+                <span>Beautiful UI/UX Design</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> verified_user </span>
+                <span>Complete 24/7 Security</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> support </span>
+                <span>Exceptional Lifestyle </span>
+              </li>
+            </ul>
+
+            <button type="button" style="padding: 1px 0 1px 2px" class="d-flex rounded-pill mx-3 btn-primary">
+              <span class="bg-white text-dark rounded px-3 py-1 rounded-pill">
+                Schedule meeting
+              </span>
+              <small class="material-symbols-outlined my-auto mx-1" style="font-size: 16px">
+                arrow_forward_ios
+              </small>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About us end -->
+
+  <!-- testimonials start -->
+  <section data-aos="fade-up" class="banner-video mb-5" style="background-image: url('./imgs/neon_bg.jpg')">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+          <div class="d-block w-75 mx-auto">
+            <video class="w-100 " controls>
+              <source src="./imgs/v1.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-75 mx-auto">
+            <video class="w-100 " controls>
+              <source src="./imgs/v2.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-75 mx-auto">
+            <video class="w-100 " controls>
+              <source src="./imgs/v3.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- testimonial end -->
+  <!-- cards start  -->
+  <div class="container">
+    <div class="feature_box_area_full">
+      <div class="row mx-3">
+        <!-- Single -->
+        <div class="col-lg-6 col-md-6 mb-30" data-aos="fade-up-right">
+          <div class="info-box-4" style="
+                background-image: url('https://cdn.pixabay.com/photo/2015/03/11/20/12/eye-669157_1280.jpg');
+              ">
+            <div class="content">
+              <h4>
+                <a href="https://preetheme.com/html/ibig/it/index4.html#">Vision</a>
+              </h4>
+              <p>
+                To Emerge as partner for IT asset management, asset monitoring
+                and informaitno security. Evolving seemless cyber security
+                infra structure for auto-deployment and monitoring.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Single -->
+        <div class="col-lg-6 col-md-6 mb-30" data-aos="fade-up-left">
+          <div class="info-box-4" style="
+                background-image: url('https://cdn.pixabay.com/photo/2015/03/11/20/12/eye-669157_1280.jpg');
+              ">
+            <div class="content">
+              <h4>
+                <a href="https://preetheme.com/html/ibig/it/index4.html#">
+                  Mission
+                </a>
+              </h4>
+              <p>
+                Helping Businesses to succeed by providing innovative and
+                effective solutions. Utilizing digital information, AI &
+                Technology.Utilizing digital information, AI & Technology.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Single -->
+        <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up-right">
+          <div class="info-box-4" style="
+                background-image: url('https://cdn.pixabay.com/photo/2023/12/08/13/36/ai-generated-8437633_640.jpg');
+              ">
+            <div class="icon">
+              <span class="material-symbols-outlined">
+                assured_workload
+              </span>
+            </div>
+            <div class="content">
+              <h4>
+                <a href="https://preetheme.com/html/ibig/it/index4.html#">Compliance</a>
+              </h4>
+              <p>
+                Information Technology Asset Management offer features that
+                help businesses comply with IT regulations, reducing the risk
+                of penalties or fines.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Single -->
+        <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up">
+          <div class="info-box-4" style="
+                background-image: url('https://cdn.pixabay.com/photo/2023/12/08/13/36/ai-generated-8437633_640.jpg');
+              ">
+            <div class="icon">
+              <span class="material-symbols-outlined"> manage_history </span>
+            </div>
+            <div class="content">
+              <h4>
+                <a href="https://preetheme.com/html/ibig/it/index4.html#">Risk Management</a>
+              </h4>
+              <p>
+                Asset management software can provide features such as
+                tracking maintenance schedules and monitoring asset usage,
+                helping to mitigate these risks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Single -->
+        <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up-left">
+          <div class="info-box-4" style="
+                background-image: url('https://cdn.pixabay.com/photo/2023/12/08/13/36/ai-generated-8437633_640.jpg');
+              ">
+            <div class="icon">
+              <span class="material-symbols-outlined">
+                display_settings
+              </span>
+            </div>
+            <div class="content">
+              <h4>
+                <a href="https://preetheme.com/html/ibig/it/index4.html#">Improved Decision Making</a>
+              </h4>
+              <p>
+                Access to up-to-date asset information allows businesses to
+                make informed decisions about asset allocation, maintenance
+                prioritization, and planning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cards end -->
+ 
+  <!-- service diagram start -->
+  <section class="core-feature-section section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-right">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Services We Offer</h4>
+            <h2 class="fs-3">
+              IT ASSET SERVICES & MANAGEMENT
+              <!-- <span>in the mean time</span> -->
+            </h2>
+          </div>
+          <div class="core-feature-content">
+            <p>
+              IT Asset Management ITAM and IT Service Management ITSM is a
+              methodology employed by almost all businesses in different
+              formats. It helps the organization to derive different values,
+              optimize operations and resources and reduce operational costs.
+              Some premier research establishments reported 40 to 45%
+              operational cost savings with the deployment of ITAM and ITSM.
+            </p>
+            <div class="item mb-25">
+              <div class="icon">
+                <i class="fab fa-hive"></i>
+              </div>
+              <div class="content">
+                <h4>security & Location</h4>
+                <p>
+                  Strengthen cybersecurity across distributed offices and
+                  remote workforce with centralized visibility and control of
+                  all IT assets.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <div class="content">
+                <h4>support & Customization</h4>
+                <p>
+                  Optimize budgets by identifying unused or underutilized
+                  assets for reallocation, upgrades or removal to reduce IT
+                  expenditures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up-left">
+          <div class="core-feature-img text-center">
+            <img style="width: 90%" src="./imgs/service_frame.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="my-5 container">
+        <div class="row">
+          <div class="col-lg-4  "> 
+            <div class="sticky-lg-top ">
+              <br>
+              <h3 class="my-4">AIGUTECH ENTERPRISE ASSET MANAGEMENT</h3>
+              <img src="./imgs/solution.svg" alt="" class="w-100 mx-auto">
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <span class="material-symbols-outlined">devices</span>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                  molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                  numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                  optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service diagram end -->
+  <!-- branding below -->
+  <section class=" section-bg section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-right">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Information Technology Asset Management </h4>
+            <h2 class="fs-3">ITAM </h2>
+          </div>
+          <div class="core-feature-content">
+            <p>
+              Information Technology Asset Management (ITAM) is a strategic approach to managing an organization’s IT
+              assets throughout their lifecycle. This process involves the acquisition, deployment, maintenance, and
+              disposal of hardware, software, and network assets. The primary goal of ITAM is to optimize asset
+              utilization, control costs, and ensure compliance with regulatory requirements and internal policies.
+              <br><br>
+              Key components of ITAM include inventory management, which involves tracking all IT assets to maintain an
+              accurate and up-to-date record; asset lifecycle management, focusing on the stages from procurement to
+              disposal; and compliance management, ensuring that all software and hardware meet licensing and regulatory
+              standards.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up-left">
+          <div class="core-feature-img text-center">
+            <img class="w-75" src="./imgs/ITAM.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6" data-aos="fade-up-right">
+          <div class="about-img text-center">
+            <img class="w-75" src="./imgs/ITSM.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-left">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>AIGUTECH TECHNOLGY SERVICE MANAGEMENT</h4>
+            <h2 class="fs-3"> ITSM </h2>
+          </div>
+          <div class="about-content-2">
+            <p>
+              Information Technology Service Management (ITSM) is a systematic approach to designing, delivering,
+              managing, and improving IT services within an organization. It focuses on aligning IT services with the
+              needs of the business to deliver value. Key processes include incident management, problem management,
+              change management, and service request management.
+              <br><br>
+              ITSM frameworks like ITIL (Information Technology Infrastructure Library) provide best practices for
+              efficient service delivery. By implementing ITSM, organizations can enhance service quality, improve
+              customer satisfaction, and increase operational efficiency. It ensures that IT services are reliable,
+              scalable, and aligned with business goals, ultimately supporting the organization's overall strategy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-bg section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-right">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Records Management System</h4>
+            <h2 class="fs-3">RMS </h2>
+          </div>
+          <div class="core-feature-content">
+            <p>
+              A Records Management System (RMS) is a comprehensive solution designed to manage an organization's records
+              throughout their lifecycle. This includes creation, classification, storage, retrieval, and disposal of
+              records, ensuring compliance with regulatory requirements and organizational policies. An effective RMS is
+              crucial for maintaining data integrity, security, and accessibility, supporting both operational needs and
+              legal obligations.
+              <br><br>
+              Key features of an RMS include document capture, which digitizes physical records and imports electronic
+              records; indexing, which categorizes records for easy retrieval; and retention scheduling, which ensures
+              records are kept for the appropriate amount of time before being securely disposed of. Additionally, an
+              RMS often includes features for audit trails, providing a history of who accessed or modified records, and
+              security controls, ensuring that only authorized personnel can access sensitive information.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up-left">
+          <div class="core-feature-img text-center">
+            <img class="w-75" src="./imgs/RMS.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6" data-aos="fade-up-right">
+          <div class="about-img text-center">
+            <img class="w-75" src="./imgs/MDM.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-left">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Meter Data Management</h4>
+            <h2 class="fs-3"> MDM </h2>
+          </div>
+          <div class="about-content-2">
+            <p>
+              Meter Data Management (MDM) is a system and process for collecting, validating, storing, and analyzing
+              data from utility meters, such as electricity, water, and gas meters. The primary purpose of MDM is to
+              manage large volumes of meter data efficiently and accurately, providing a centralized platform for
+              handling meter readings and related information.
+              <br><br>
+              Key components of MDM include data collection, which involves retrieving data from various meters through
+              automated meter reading (AMR) or advanced metering infrastructure (AMI); data validation, which ensures
+              the accuracy and consistency of the collected data; and data storage, which securely retains the data for
+              future use. MDM systems also provide tools for data analysis, enabling utilities to gain insights into
+              consumption patterns, detect anomalies, and forecast demand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-bg section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-right">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Network Monitoring System</h4>
+            <h2 class="fs-3">NMS </h2>
+          </div>
+          <div class="core-feature-content">
+            <p>
+              A Network Monitoring System (NMS) is a crucial tool for maintaining the health and performance of an
+              organization's IT infrastructure. It involves continuous surveillance of a computer network to detect and
+              respond to any issues that may affect network performance, security, and availability.
+              <br><br>
+              Key features of an NMS include real-time monitoring, which provides instant visibility into network
+              traffic and device status; alerting mechanisms, which notify administrators of potential problems such as
+              outages, bottlenecks, or security breaches; and performance analysis, which evaluates network metrics to
+              ensure optimal operation. Additionally, NMS tools often include functionalities for configuration
+              management, fault management, and reporting, allowing for comprehensive oversight and maintenance of the
+              network.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up-left">
+          <div class="core-feature-img text-center">
+            <img class="w-75" src="./imgs/NMS.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6" data-aos="fade-up-right">
+          <div class="about-img text-center">
+            <img class="w-75" src="./imgs/DTM.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-left">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Data Threat Management</h4>
+            <h2 class="fs-3"> DTM </h2>
+          </div>
+          <div class="about-content-2">
+            <p>
+              Data Threat Management (DTM) is a comprehensive approach to identifying, assessing, and mitigating threats
+              to an organization's data. It encompasses various strategies, tools, and practices aimed at protecting
+              data from unauthorized access, breaches, and other malicious activities.
+              <br><br>
+              Key components of DTM include threat detection, which involves using advanced analytics and monitoring
+              tools to identify potential security threats in real time; threat assessment, which evaluates the severity
+              and potential impact of identified threats; and threat mitigation, which implements measures to neutralize
+              or reduce the impact of threats. This often includes encryption, access controls, intrusion detection
+              systems (IDS), and regular security audits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-bg section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-right">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Utility Asset Management</h4>
+            <h2 class="fs-3">UAM </h2>
+          </div>
+          <div class="core-feature-content">
+            <p>
+              Utility Asset Management (UAM) for digital devices involves the systematic approach to managing the
+              lifecycle of digital assets used by utility companies, such as smart meters, sensors, communication
+              devices, and data management systems. The goal is to optimize the performance, reliability, and
+              cost-effectiveness of these assets while ensuring regulatory compliance and supporting the overall
+              operational objectives of the utility.
+              <br><br>
+              Key components of UAM include asset inventory management, which keeps a detailed record of all digital
+              devices and their specifications; asset lifecycle management, which tracks assets from procurement through
+              deployment, maintenance, and disposal; and performance monitoring, which uses real-time data analytics to
+              assess the health and efficiency of assets. Additionally, UAM involves predictive maintenance, which
+              anticipates potential failures and schedules timely maintenance to prevent downtime, and compliance
+              management, which ensures all assets meet industry standards and regulatory requirements.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up-left">
+          <div class="core-feature-img text-center">
+            <img class="w-75" src="./imgs/NMS.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" section-padding">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-6" data-aos="fade-up-right">
+          <div class="about-img text-center">
+            <img class="w-75" src="./imgs/Compliance.png  " alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center" data-aos="fade-up-left">
+          <!-- Section Headding -->
+          <div class="section-headding-3 mb-20">
+            <h4>Compliance</h4>
+            <h2 class="fs-3"> Compliance </h2>
+          </div>
+          <div class="about-content-2">
+            <p>
+              Key components of compliance in ITAM include:
+              <br>
+              <b> Software License Management:</b> Ensuring that all software used within the organization is properly
+              licensed and that the number of installations does not exceed the number of licenses purchased. This helps
+              avoid costly fines from software audits and ensures legal usage.
+              <br>
+              <b> Regulatory Compliance:</b> Adhering to regulations such as GDPR (General Data Protection Regulation),
+              HIPAA (Health Insurance Portability and Accountability Act), and other industry-specific laws that govern
+              data privacy and security. IT assets must be managed to protect sensitive information and maintain
+              compliance with these regulations.
+              <br>
+              <b> Security Standards:</b> Ensuring that IT assets meet security standards such as ISO/IEC 27001, which
+              specifies the requirements for establishing, implementing, maintaining, and continually improving an
+              information security management system (ISMS).
+              <br>
+              <b> Audit Trails and Documentation:</b> Maintaining detailed records of asset management activities,
+              including procurement, deployment, usage, and disposal. This documentation is essential for demonstrating
+              compliance during audits and inspections.
+              <br>
+              <b> Policy Enforcement:</b> Developing and enforcing ITAM policies that define how assets should be
+              managed, used, and disposed of. This includes training employees on compliance requirements and ensuring
+              adherence to these policies.
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- brandking above -->
+  <!-- partners start -->
+  <div class="pt-50 section-bg mt-5">
+    <div class="container" data-aos="fade-up">
+      <div class="row mx-3">
+        <div class="col-lg-12 text-center">
+          <div class="client-logo-slider owl-carousel owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+              <div class="owl-stage d-flex justify-content-center">
+                <div class="owl-item cloned mx-5 " style="width:160px">
+                  <div class="single ">
+                    <img style="filter: grayscale(100%); " src="./imgs/logo_midani.png" alt="logo" />
+                  </div>
+                </div>
+                <div class="owl-item cloned mx-5 " style="width:100px">
+                  <div class="single">
+                    <img style="filter: grayscale(100%); " src="./imgs/logo_shivneribank.jpg" alt="logo" />
+                  </div>
+                </div>
+                <div class="owl-item cloned mx-5 " style="width:280px">
+                  <div class="single py-2 ">
+                    <img style="filter: grayscale(100%); " src="./imgs/logo_usha.png" alt="logo" />
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav disabled">
+                <button type="button" role="presentation" class="owl-prev">
+                  <span aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                  class="owl-next">
+                  <span aria-label="Next">›</span>
+                </button>
+              </div>
+              <div class="owl-dots disabled"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <!-- partners end -->
+
+  <!-- testimonials start -->
+  <section data-aos="fade-up" class="banner-video" style="background-image: url('./imgs/neon_bg.jpg')">
+    <div class="container">
+      <div class="row mx-3">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="banner-video-content text-center">
+            <div class="video-btn">
+              <a data-rel="lightcase" href="https://player.vimeo.com/video/553110309?h=dc4ee31dc4"><i
+                  class="fas fa-play"></i></a>
+            </div>
+            <h2>
+              We Deliver Solution With The Goal Of A Trusting Relationships
+            </h2>
+            <!-- <p>
+                Lorem ipsum dolor sit, amet consectetur, adipisicing elit.
+                Doloremque unde alias autem, blanditiis expedita commodi?
+              </p>
+              <a class="button-3" href="#"
+                >Get Services <i class="bi bi-arrow-right"></i
+              ></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section data-aos="fade-up" class="section-padding section-bg pb-0">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-headding-3">
+          <h4>our Client Feadback</h4>
+          <h2>We Help Grow Your Exponentially</h2>
+        </div>
+        <div class="py-5 my-4">&nbsp;</div>
+        <div class="container">
+          <section id="testim" class="testim">
+            <div class="testim-cover">
+              <div class="wrap">
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+                <ul id="testim-dots" class="dots">
+                  <li class="dot active"></li>
+                  <!--
+                      -->
+                  <li class="dot"></li>
+                  <!--
+                      -->
+                  <li class="dot"></li>
+                  <!--
+                      -->
+                  <li class="dot"></li>
+                  <!--
+                      -->
+                  <li class="dot"></li>
+                </ul>
+                <div id="testim-content" class="cont">
+                  <div class="active">
+                    <div class="img">
+                      <img
+                        src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/268675/Logotype.png"
+                        alt="" />
+                    </div>
+                    <!-- <h2>Lorem P. Ipsum</h2> -->
+                    <p>
+                      Regular management of the IT-Assets lifecycle will
+                      reduce cost of each asset for 30-40 % withinthe first
+                      year and for 25-30 % during each following year.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img src="./imgs/forester_testimonial.png" alt="" />
+                    </div>
+                    <!-- <h2>Mr. Lorem Ipsum</h2> -->
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img
+                        src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/268675/Logotype.png"
+                        alt="" />
+                    </div>
+                    <!-- <h2>Lorem Ipsum</h2> -->
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img
+                        src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/268675/Logotype.png"
+                        alt="" />
+                    </div>
+                    <!-- <h2>Lorem De Ipsum</h2> -->
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="img">
+                      <img
+                        src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/268675/Logotype.png"
+                        alt="" />
+                    </div>
+                    <!-- <h2>Ms. Lorem R. Ipsum</h2> -->
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial end -->
+
+  <!-- footer start -->
+  <footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top pt-70 pb-20">
+      <div class="container">
+        <div class="row mx-3">
+          <!-- Single -->
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="f-widgets-single">
+              <!-- Logo -->
+              <div class="flogo mb-20">
+                <a href="index.html">
+                  <!-- <img src="../assets/img/white-logo.png" alt="logo" /> -->
+                  <img class="w-75 mx-auto" src="./imgs/agt-white-logo.png" alt="" />
+                </a>
+              </div>
+              <!-- <p>
+                  Lorem Ipsum is simply dummy text of the and typesetting
+                  industry.
+                </p>  -->
+              <div class="f-social">
+                <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-instagram"></i></a></span>
+                <span><a href="#"><i class="fab fa-vimeo-v"></i></a></span>
+              </div>
+            </div>
+          </div>
+          <!-- Single -->
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="f-widgets-single">
+              <h2>Location and Contact</h2>
+
+              <!-- <p class="py-1" style="line-height: 2.3">
+                  Off. No. 38,39. 4th floor Jito Business Bay, Shri Hari Kute
+                  Marg, Mumbai Naka Nashik 422001
+                </p> -->
+              <ul>
+                <li>
+                  <a href="#">
+                    Off. No. 38,39. 4th floor Jito Business Bay, Shri Hari
+                    Kute Marg, Mumbai Naka Nashik 422001</a>
+                </li>
+                <li>
+                  <a href="tel:+912243536500">
+                    <i class="fa fa-phone-alt me-3"></i>
+                    +91 22-43536500</a>
+                </li>
+                <li>
+                  <a href="tel:+917276226878">
+                    <i class="fa fa-phone-alt me-3"></i>
+                    +91 7276226878</a>
+                </li>
+                <li>
+                  <a href="mailto:info@agtrelion.com">
+                    <i class="fa fa-envelope me-3"></i>
+                    info@agtrelion.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Single -->
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="f-widgets-single">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="#">Compliance</a></li>
+                <li><a href="#">Remote MAnagement</a></li>
+                <li><a href="#">Neetwork Management</a></li>
+                <li><a href="#">Master Data Management</a></li>
+                <li><a href="#">Helpdesk support </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Single -->
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="f-widgets-single">
+              <h2>Popular News</h2>
+              <div class="f-w-l-blog">
+                <!-- Single -->
+                <div class="single">
+                  <div class="thumbnail">
+                    <a href="single.html">
+                      <img src="https://preetheme.com/html/ibig/assets/img/blog/1.jpg" alt="blog" />
+                    </a>
+                  </div>
+                  <div class="cont">
+                    <h4>
+                      <a href="single.html">5 Easy Ways to Improve Your Web Security</a>
+                    </h4>
+                    <span><i class="far fa-calendar-alt"></i> 09 February
+                      2022</span>
+                  </div>
+                </div>
+                <!-- Single -->
+                <div class="single">
+                  <div class="thumbnail">
+                    <a href="single.html">
+                      <img src="https://preetheme.com/html/ibig/assets/img/blog/1.jpg" alt="blog" />
+                    </a>
+                  </div>
+                  <div class="cont">
+                    <h4>
+                      <a href="single.html">5 Easy Ways to Improve Your Web Security</a>
+                    </h4>
+                    <span><i class="far fa-calendar-alt"></i> 09 February
+                      2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom pt-30 pb-30">
+      <div class="container">
+        <div class="row mx-3">
+          <div class="col-lg-6">
+            <div class="copy-text">
+              <p>
+                Copyright © 2024 | Aigutech Technologies | All rights reserved
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="#">Terms &amp; Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

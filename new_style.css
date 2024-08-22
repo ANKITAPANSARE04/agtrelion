@@ -1,0 +1,118 @@
+
+body{background-color: #F3F4F5;}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+
+.brand_container {
+  position: relative;
+  z-index: 999;
+}
+
+.brand_container img {
+  position: absolute;
+}
+
+.brand_container .header_logo {
+  width: 12%;
+  margin: 20px 15px;
+}
+
+.header_logo_bg {
+  width: 45%;
+}
+
+#carouselExampleControls .carousel-item {
+  height: 98vh;
+}
+
+#carouselExampleControls .carousel-item img {
+  animation: zoom-in-zoom-out 50s ease infinite;
+}
+
+.d-block-center-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.d-block-center-text h4,
+.d-block-center-text h2 {
+  color: white;
+}
+
+.feature_box_area_full .icon .material-symbols-outlined {
+  font-size: 40px;
+}
+
+.glass-blue-bg {
+  background-color: #EAEFF3;
+}
+.row.mx-auto.px-0  .col-lg-6.col-md-6.col-sm-12.py-4:hover{background-color: #dde3e7;border-radius: 10px;}
+.row.mx-auto.px-0  .col-lg-6.col-md-6.col-sm-12.py-4{cursor: pointer;} 
+.video-caesoul{width: 50%;margin: 0 auto;}
+.solution-dig img{width: 100%;}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .video-caesoul{width: 80%;}
+  .navbar.navbar-expand-lg{padding: 30px;}
+  #carouselExampleControls .carousel-item {    height: 60vh;}
+  .header_logo_bg {    width: 50%;}
+  .solution-dig{width: 70%;}
+  .solution-dig .py-5.m-0{padding: 0px !important;}
+  .col-1{display: none}
+  .d-block-center-text {   top: 70%;}
+    
+}
+@media screen and (max-width: 600px) {
+  #carouselExampleControls .carousel-item {    height: 50vh;}
+  .brand_container img{display: none !important;}
+  #scroll-image{opacity: 0.9 !important;}
+  .header.header-style-3{position: relative !important;}
+  .col-1{display: none}
+  #carouselExampleControls .carousel-item .fs-1{font-size: 20px !important;}
+  #carouselExampleControls .carousel-item img{animation: none;}
+  .video-btn button {height: 40px;width: 40px;}
+  .video-btn button .fa-solid, .fas{font-size: medium;}
+.d-block-center-text {
+    top: 50%;
+}
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1.5, 1.5);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+#scroll-image{width: 83px; position: absolute;  top: -20px;  left: 40px;     opacity: 0;     transition: opacity 1s ease; }
+.header.header-style-3{position: fixed;top: 0;width: 100%;z-index: 99;}
+

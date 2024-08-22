@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Animation with Loading Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./imgs/loder-bg.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Prevent scrollbars */
+            transition: opacity 1s ease-in-out; /* Smooth fade-out transition */
+        }
+
+        .loader-container {
+            position: relative;
+            text-align: center;
+            transition: opacity 0.5s ease-out; /* Smooth transition for hiding */
+        }
+
+        .logo {
+            width: 300px; /* Initial size of the logo */
+            transition: transform 1s ease, width 1s ease; /* Smooth transformation and scaling */
+        }
+
+        .loading-bar {
+            width: 100%;
+            max-width: 600px;
+            height: 10px;
+            background: #f7f7f7; /* Background for the progress bar */
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgba(37, 103, 177, 0.8); /* Neon glow effect */
+            position: relative;
+            margin-bottom: 20px; /* Space between progress bar and logo */
+        }
+
+        .loading-progress {
+            height: 100%;
+            width: 0; /* Start with 0 width */
+            background: linear-gradient(90deg, #2567B1, #0ff); /* Neon gradient color */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(37, 103, 177, 0.8); /* Neon glow effect on fill */
+            transition: width 0.5s ease; /* Smooth filling effect */
+        }
+
+        .hidden {
+            display: none; /* Hide the progress bar */
+        }
+
+        .fade-out {
+            opacity: 0; /* Fade out effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <img src="./imgs/agt_svg.svg" alt="Logo" class="logo" id="logo">
+        <div class="loading-bar" id="loadingBar">
+            <div class="loading-progress" id="loadingProgress"></div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loadingProgress = document.getElementById('loadingProgress');
+            const logo = document.getElementById('logo');
+            const loadingBar = document.getElementById('loadingBar');
+            const redirectDuration = 3000; // Duration for the redirection in milliseconds
+            const duration = 2000; // Duration for the progress bar in milliseconds
+            const intervalTime = 50; // Interval for progress updates in milliseconds
+            const steps = duration / intervalTime;
+            let width = 0;
+
+            // Simulate loading progress
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    // After loading completes, hide progress bar and animate logo
+                    setTimeout(() => {
+                        loadingBar.classList.add('hidden'); // Hide the progress bar 
+                       
+                            setTimeout(() => {
+                                document.body.classList.add('fade-out'); // Start fade-out effect
+                                window.location.href = "./index.html"; // Perform the redirection
+                            }, 370); // Wait for the fade-out transition to complete
+                        
+                    }, 1000); // Short delay to ensure the progress bar disappears smoothly
+                } else {
+                    width += (100 / steps);
+                    loadingProgress.style.width = width + '%';
+                }
+            }, intervalTime); // Update the progress bar every `intervalTime` milliseconds
+
+        
+        });
+    </script>
+</body>
+</html>
