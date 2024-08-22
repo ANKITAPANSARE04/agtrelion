@@ -1,0 +1,337 @@
+(function($){
+	'use script';
+    $(window).on('load', function(event) {
+        $('#preeloader').delay(500).fadeOut(500);
+    });
+	// WOW JS
+	new WOW().init();
+	// Nice Select
+	$('select').niceSelect();
+
+
+	$(".header-search-icon").click(function () {
+      	if ($('.header-top-search-form').hasClass("active")) {
+        	$(".header-top-search-form, .header-search-icon").removeClass("active");
+      	}
+      	else {
+        	$(".header-top-search-form").removeClass("active");
+        	$('.header-top-search-form, .header-search-icon').addClass("active");
+      	}
+  	});
+    // Sidebar
+    $('.hclick_sidebar_btn .bar').click(function(){
+        $('.about-sidebar-section, .off_canvars_overlay').addClass('active');
+    });
+    $('.hide-sidebar i, .off_canvars_overlay').click(function(){
+        $('.about-sidebar-section, .off_canvars_overlay').removeClass('active');
+    });
+  	 // /*---slider activation---*/
+    var $HeroSliderSlider = $('.hero-slider-full');
+    if($HeroSliderSlider.length > 0){
+        $HeroSliderSlider.owlCarousel({
+            loop: true,
+            dots:true,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            items: 1,
+            nav:false,
+            smartSpeed: 1500,
+        });
+    }
+  	 // /*---slider activation---*/
+    var $HeroSliderSlider2 = $('.hero-slider-full-2');
+    if($HeroSliderSlider2.length > 0){
+        $HeroSliderSlider2.owlCarousel({
+            loop: true,
+            dots:false,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            animateOut: 'fadeOut',
+            items: 1,
+            nav:true,
+            navText:['<span class="hero-nav"><i class="fas fa-angle-left"></i></span>','<span class="hero-nav"><i class="fas fa-angle-right"></i></span>'],
+            smartSpeed: 1000,
+        });
+    }
+     // /*---slider activation---*/
+    var $HeroSliderSlider3 = $('.hero-slider3-full');
+    if($HeroSliderSlider3.length > 0){
+        $HeroSliderSlider3.owlCarousel({
+            loop: true,
+            dots:false,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            animateOut: 'fadeOut',
+            items: 1,
+            nav:true,
+            navText:['<span class="hero-nav"><i class="bi bi-chevron-left"></i></span>','<span class="hero-nav"><i class="bi bi-chevron-right"></i></span>'],
+            smartSpeed: 1000,
+        });
+    }
+     // /*---slider activation---*/
+    var $HeroSliderSlider4 = $('.hero-slider4-full');
+    if($HeroSliderSlider4.length > 0){
+        $HeroSliderSlider4.owlCarousel({
+            loop: true,
+            dots:false,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            animateOut: 'fadeOut',
+            items: 1,
+            nav:true,
+            navText:['<span class="hero-nav"><i class="bi bi-chevron-left"></i></span>','<span class="hero-nav"><i class="bi bi-chevron-right"></i></span>'],
+            smartSpeed: 1000,
+        });
+    }
+  	 // /*---slider activation---*/
+    var $ClientLogoSlider = $('.client-logo-slider');
+    if($ClientLogoSlider.length > 0){
+        $ClientLogoSlider.owlCarousel({
+            loop: true,
+            dots:false,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            items: 5,
+            nav:false,
+            margin:30,
+            smartSpeed: 1500,
+            responsive:{
+            	0:{
+                    items:2
+                },
+                350:{
+                    items:3
+                },
+                768:{
+                    items:4
+                },
+                992:{
+                    items:4
+                },
+                1200:{
+                    items:5
+                },
+            }
+        });
+    }
+  	 // /*---slider activation---*/
+    var $Testimonial2Slider = $('.testimonial-slider-2');
+    if($Testimonial2Slider.length > 0){
+        $Testimonial2Slider.owlCarousel({
+            loop: true,
+            dots:true,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            items: 1,
+            nav:false,
+            smartSpeed: 500,
+        });
+    }
+     /*---Team Member---*/
+    var $TeamSlider = $('.team-slider-full');
+        if($TeamSlider.length > 0){
+        $('.team-slider-full').owlCarousel({
+            autoplay: true,
+            loop: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 8000,
+            items: 3,
+            margin:30,
+            dots:false,
+            navText:['<span class="teammember-nav"><i class="bi bi-arrow-left"></i></span>','<span class="teammember-nav"><i class="bi bi-arrow-right"></i></span>'],
+            responsiveClass:true,
+            responsive:{
+                    0:{
+                    items: 1,
+                    stagePadding: 0,
+                    margin: 0,
+                },
+                450:{
+                    items:2,
+                },
+                876:{
+                    items:2,
+                },
+                991:{
+                    items:3,
+                },
+            }
+        });
+    }
+     /*---latest-project-slider---*/
+    var $LatestProjectSlider = $('.latest-project-slider');
+        if($LatestProjectSlider.length > 0){
+        $('.latest-project-slider').owlCarousel({
+            autoplay: true,
+            loop: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 8000,
+            items: 3,
+            margin:30,
+            dots:false,
+            navText:['<span class="lproject-nav"><i class="bi bi-arrow-left"></i></span>','<span class="lproject-nav"><i class="bi bi-arrow-right"></i></span>'],
+            responsiveClass:true,
+            responsive:{
+                    0:{
+                    items: 1,
+                    stagePadding: 0,
+                    margin: 0,
+                },
+                450:{
+                    items:2,
+                },
+                876:{
+                    items:2,
+                },
+                991:{
+                    items:3,
+                },
+            }
+        });
+    }
+     /*---Info Box---*/
+    var $InFoBoxSlider = $('.infobox-slider-1');
+        if($InFoBoxSlider.length > 0){
+        $('.infobox-slider-1').owlCarousel({
+            autoplay: true,
+            loop: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 8000,
+            items: 3,
+            margin:30,
+            dots:false,
+            center:true,
+            navText:['<span class="info-nav"><i class="bi bi-chevron-left"></i></span>','<span class="info-nav"><i class="bi bi-chevron-right"></i></span>'],
+            responsiveClass:true,
+            responsive:{
+                    0:{
+                    items: 1,
+                    stagePadding: 0,
+                    margin: 0,
+                    center:false,
+                },
+                500:{
+                    items:2,
+                    center:false,
+                },
+                768:{
+                    items:2,
+                    center:false,
+                },
+                992:{
+                    items:3,
+                },
+            }
+        });
+    }
+     /*---Testimonial---*/
+    var $Testimonial3Slider = $('.testimonial-slider3-full');
+        if($Testimonial3Slider.length > 0){
+        $('.testimonial-slider3-full').owlCarousel({
+            autoplay: true,
+            loop: true,
+            nav: true,
+            autoplay: false,
+            autoplayTimeout: 8000,
+            items: 3,
+            margin:30,
+            dots:false,
+            center:true,
+            navText:['<span class="test-nav"><i class="bi bi-chevron-left"></i></span>','<span class="test-nav"><i class="bi bi-chevron-right"></i></span>'],
+            responsiveClass:true,
+            responsive:{
+                    0:{
+                    items: 1,
+                    stagePadding: 0,
+                    margin: 0,
+                    center:false,
+                },
+                600:{
+                    items:2,
+                    center:false,
+                },
+                768:{
+                    items:2,
+                    center:false,
+                },
+                992:{
+                    items:3,
+                },
+            }
+        });
+    }
+    var $circleChart = $('.circlechart');
+        if($circleChart.length > 0){
+        $('.circlechart').circlechart();
+    }
+
+	// Scroll Area
+	$(document).ready(function(){
+	    $('.scroll-area').click(function(){
+	      	$('html').animate({
+	        	'scrollTop' : 0,
+	      	},700);
+	      	return false;
+	    });
+	    $(window).on('scroll',function(){
+	      	var a = $(window).scrollTop();
+	      	if(a>400){
+	            $('.scroll-area').slideDown(300);
+	        }else{
+	            $('.scroll-area').slideUp(200);
+	        }
+	    });
+	});
+
+	$('a[data-rel^=lightcase]').lightcase({
+        transition: 'elastic', /* none, fade, fadeInline, elastic, scrollTop, scrollRight, scrollBottom, scrollLeft, scrollHorizontal and scrollVertical */
+        swipe: true,
+        maxWidth: 1170,
+        maxHeight: 600,
+    });
+
+
+	var $portfolio = $('.p-projects-full');
+	    if($portfolio.length > 0){
+	        var mixer = mixitup('.p-projects-full');
+	      	var mixer = mixitup('.portF');
+	      	var mixer = mixitup('.portF', {
+	        selectors: {
+	          target: '.blog-item'
+	        },
+	        animation: {
+	          duration: 100
+	        }
+	    });
+	}
+
+
+	// Counter
+    var $CounterUp = $('.counter');
+    if($CounterUp.length > 0){
+		$('.counter').counterUp({
+	        delay: 10,
+	        time: 2000
+	    });
+	}
+
+
+
+	// Sticky Menu
+	$(document).ready(function(){
+		$(window).on('scroll',function(){
+			var scroll = $(window).scrollTop();
+			if(scroll < 150){
+				$('.sticky-header').removeClass('sticky');
+			}else{
+				$('.sticky-header').addClass('sticky');
+			}
+		});
+	});
+
+
+
+}(jQuery));
